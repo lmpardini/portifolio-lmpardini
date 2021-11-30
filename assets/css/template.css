@@ -127,6 +127,7 @@ nav a{
 .portifolio_title H1{
     font-size: 40px;
     color: #D2691E;
+    text-transform: uppercase;
 }
 .portifolio_items_area{
     display: flex;
