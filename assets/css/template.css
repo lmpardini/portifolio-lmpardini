@@ -49,6 +49,7 @@ nav a{
 }
 .area_banner_text{
     padding-left: 25px;
+    margin-left: 20px;
 }
 .area_banner_text h1{
     text-transform: uppercase;
@@ -108,9 +109,6 @@ nav a{
 }
 
 
-
-
-
 #portifolio{
     display: flex;
     justify-content: center;
@@ -134,33 +132,14 @@ nav a{
     justify-content: center;
 }
 .portifolio_item{
-    margin-right: 50px;
+    padding: 25px;
     box-shadow:-2px -2px 5px #EEE;
     
 }
 .portifolio_item img{
-    width: 350px;
-    height: 200px;
+    width: 250px;
+    height: 160px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 footer{    
     display: flex;
@@ -185,4 +164,66 @@ footer{
 }
 
 
+@media only screen and (min-width: 768px) and (max-width:1024px){ 
+    .area_banner_text {
+        padding-left: 60px;
+    }
 
+    .area_banner_image img{
+        width: 300px;
+        height: 300px;
+    }
+    .portifolio_item img{
+        width: 200px;
+        height: 140px;
+    }
+    
+}
+
+@media only screen and (min-width: 320px) and (max-width:768px){ 
+    .container{
+        width: auto;    
+    }
+    .area_banner{
+        flex-direction: column;
+    /* height: 300px; */
+    justify-content: space-around;
+    }
+
+    .area_banner_left{
+        flex-direction: column;
+    }
+
+    .portifolio_items_area{
+        flex-direction: column;
+        margin-right: none;
+        margin-bottom: 20px;
+    }
+
+    .area_banner_rigth{
+        min-width: none;
+    }
+    .area_banner_text{
+        margin-left: none;
+    }
+    .area_banner_image img{
+        width: 300px;
+        height: 300px;
+    }
+    .area_banner_text h1{
+        font-size: 32px;
+    }
+    .area_banner_text h3{
+        font-size: 14px;
+    }
+
+    .area_banner_rigth{
+        min-width: 320px;
+    }
+        
+    .portifolio_item img{
+        width: 280px;
+        height: 180px;
+    }
+    
+}
