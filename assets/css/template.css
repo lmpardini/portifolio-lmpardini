@@ -205,6 +205,7 @@ footer{
     }
     .area_banner_text{
         margin-left: none;
+        padding: 20px;
     }
     .area_banner_image img{
         width: 300px;
